@@ -20,6 +20,13 @@ You can install the library by running the following command:
 pip install networkx-neo4j
 ----
 
+Latest version:
+
+[source, bash]
+---
+pip install git+https://github.com/pimoens/networkx-neo4j
+---
+
 
 You'll also need to install APOC and the Graph Algorithms library.
 
