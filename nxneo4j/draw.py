@@ -8,10 +8,10 @@ def draw(G, limit=100):
         LIMIT {limit}
         OPTIONAL MATCH (n)-[r]->(m)
         RETURN n.{G.identifier_property} AS source_node,
-               id(n) AS source_id,
+               elementId(n) AS source_id,
                type(r) as label,
                m.{G.identifier_property} AS target_node,
-               id(m) AS target_id
+               elementId(m) AS target_id
     """
 
     result = G.driver.session().run(query)

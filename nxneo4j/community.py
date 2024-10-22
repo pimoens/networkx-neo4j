@@ -59,7 +59,7 @@ def label_propagation_communities(G):
         relationshipWeightProperty: null
     })
     YIELD nodeId, communityId AS community
-    MATCH (n) WHERE id(n) = nodeId
+    MATCH (n) WHERE elementId(n) = nodeId
     RETURN community, collect(n.%s) AS nodes
     """ % G.identifier_property
 
@@ -83,7 +83,7 @@ def connected_components(G):
       }
     })
     YIELD nodeId, componentId AS community
-    MATCH (n) WHERE id(n) = nodeId
+    MATCH (n) WHERE elementId(n) = nodeId
     RETURN community, collect(n.%s) AS nodes
     ORDER BY community DESC
     """ % G.identifier_property

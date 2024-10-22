@@ -27,9 +27,9 @@ packages = [
 if __name__ == "__main__":
     setup(
         name="networkx-neo4j",
-        version="0.0.3",
-        maintainer="Mark Needham",
-        maintainer_email="m.h.needham@gmal.com",
+        version="0.0.4",
+        maintainer="Pieter Moens",
+        maintainer_email="pieter.moens@ugent.be",
         author="Mark Needham",
         author_email="m.h.needham@gmail.com",
         description="NetworkX API for Neo4j Graph Algorithms",
